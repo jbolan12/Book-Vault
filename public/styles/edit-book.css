@@ -1,0 +1,95 @@
+/* Header Styles */
+header {
+    background-color: #343a40; /* Dark background for header */
+    color: #ffffff; /* White text color */
+}
+
+header a {
+    color: #ffffff; /* White text color for links in the header */
+}
+
+header a:hover {
+    color: #994D1C !important; /* Hover color */
+}
+
+/* Navbar link styles */
+.nav-link {
+    color: white !important; /* White text color for nav links */
+}
+
+.nav-link:hover {
+    color: #E48F45 !; /* Hover color */
+    text-decoration: none;
+}
+
+/* Hero Banner Styles */
+.container {
+    margin-top: 2rem; /* Margin for the container */
+}
+
+.row {
+    margin-bottom: 2rem; /* Margin below the row */
+}
+
+.col-lg-7, .col-lg-5 {
+    padding: 1rem; /* Padding inside the columns */
+}
+
+.img-fluid {
+    max-width: 100%; /* Make sure image is responsive */
+    height: auto; /* Maintain aspect ratio */
+    display: block;
+    margin: auto; /* Center the image horizontally */
+}
+
+h1 {
+    font-size: 2.5rem; /* Adjust font size for the hero title */
+}
+
+p.lead {
+    font-size: 1.25rem; /* Larger font size for the lead paragraph */
+}
+
+/* Form Styles */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-top: 1rem; /* Margin on top of labels */
+}
+
+input, textarea {
+    margin-bottom: 1rem; /* Margin below input fields */
+    padding: 0.5rem; /* Padding inside input fields */
+    border-radius: 4px; /* Rounded corners */
+    border: 1px solid #ccc; /* Border color */
+}
+
+button {
+    background-color: #007bff; /* Primary button color */
+    border: none;
+    color: #fff; /* Text color for button */
+    padding: 0.5rem 1rem; /* Button padding */
+    border-radius: 4px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    font-size: 1rem; /* Font size for button */
+}
+
+button:hover {
+    background-color: #0056b3; /* Darker color on hover */
+}
+
+/* Link Styles */
+a {
+    color: #007bff; /* Color for back to books list link */
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+
+

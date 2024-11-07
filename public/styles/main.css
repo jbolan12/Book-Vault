@@ -1,0 +1,56 @@
+/* Global Styles */
+html, body {
+    height: 100vh;
+    margin: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: white; /* Main text color */
+    background-color: white; /* Background color */
+    display: flex;
+    flex-direction: column;
+}
+
+/* Header Styles */
+header {
+    background-color: #343a40; /* Dark background for header */
+    color: #ffffff; /* White text color */
+}
+
+header a {
+    color: #ffffff; /* White text color for links in the header */
+}
+
+header a:hover {
+    color: #994D1C !important; /* Hover color */
+}
+
+/* Navbar link styles */
+.nav-link {
+    color: white !important; /* White text color for nav links */
+}
+
+.nav-link:hover {
+    color: #E48F45 !; /* Hover color */
+    text-decoration: none;
+}
+
+/* Main Content Styles */
+main {
+    flex: 1; /* Allow the main content to grow and take up available space */
+    padding: 20px;
+}
+
+
+footer .bi {
+    color: white !important; /* Set icon color to white */
+}
+
+/* Jumbotron Styles */
+.px-4.pt-5.my-5.text-center.border-bottom {
+    background-color: #f8f9fa;
+    color: #212529;
+    border-radius: .3rem;
+    padding: 2rem;
+}

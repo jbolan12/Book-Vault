@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Results</title>
+    <link rel="stylesheet" href="/styles/styles.css"> <!-- Link to external stylesheet -->
+    <link rel="stylesheet" href="/styles/search-results.css"> <!-- Link to search-results specific stylesheet -->
+</head>
+<body>
+    <header>
+        <h1>Search Results</h1>
+        <a href="/" class="btn btn-secondary">Back to Home</a>
+            <a href="/books" class="btn btn-secondary">Back to Books List</a>
+    </header>
+    <main class="container">
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th>Title</th>
+                    <th>Author</th>
+                    <th>Cover</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                <% books.forEach(book => { %>
+                    <tr>
+                        <td><%= book.title %></td>
+                        <td><%= book.author %></td>
+                        <td><img src="<%= book.cover_url %>" alt="Cover Image" class="cover-image"></td>
+                        <td>
+                            <form action="/add-book" method="POST" class="inline-form">
+                                <input type="hidden" name="title" value="<%= book.title %>">
+                                <input type="hidden" name="author" value="<%= book.author %>">
+                                <input type="hidden" name="cover_url" value="<%= book.cover_url %>">
+                                <input type="hidden" name="isbn" value="<%= book.isbn %>">
+                                <button type="submit" class="btn btn-primary">Add to List</button>
+                            </form>
+                        </td>
+                    </tr>
+                <% }) %>
+            </tbody>
+        </table>
+        <div class="button-group">
+            <a href="/search" class="btn btn-secondary">Back to Search</a>
+            <a href="/books" class="btn btn-secondary">Back to Books List</a>
+        </div>
+    </main>
+</body>
+</html>

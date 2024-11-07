@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%= title %> - Book Details</title>
+    <link rel="stylesheet" href="/styles/styles.css"> <!-- Updated path -->
+</head>
+<body>
+    <h1><%= title %></h1>
+    
+    <p><strong>Author:</strong> <%= author %></p>
+    <p><strong>Rating:</strong> <%= rating %></p>
+    <p><strong>Date Read:</strong> <%= date_read %></p>
+    <p><strong>Notes:</strong> <%= notes %></p>
+    
+    <% if (coverUrl) { %>
+        <img src="<%= coverUrl %>" alt="Cover Image" style="max-width: 300px;">
+    <% } else { %>
+        <p>No cover image available.</p>
+    <% } %>
+
+    <br><br>
+
+    <a href="/books">Back to Books List</a>
+    <a href="/edit-book/<%= id %>">Edit Book</a>
+    
+    <form action="/delete-book/<%= id %>" method="POST" style="display:inline;">
+        <button type="submit">Delete Book</button>
+    </form>
+</body>
+</html>
+
+
