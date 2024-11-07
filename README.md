@@ -33,8 +33,7 @@ A simple web application built with **Node.js**, **Express.js**, and **PostgreSQ
 1. **Clone the repository**:
 
    ```bash
-   git clone https://github.com/jbolan12/Book-Vault.git
-   cd book-tracker
+   git clone https://github.com/jbolan12/BookVault-App.git
 
 **Install dependencies:**
 
